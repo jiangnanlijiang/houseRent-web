@@ -2,11 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a37f102-52a5-4400-b219-ee5cc94b54e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/CSS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/login-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/clone/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/clone/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/clone/clone.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/clone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/clone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/Mime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/Mime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/lite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/README_js.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/benchmark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/src/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/src/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/types/other.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/types/standard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/mime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/src/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/src/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/types.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +66,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -35,9 +85,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="prettierjs.PrettierConfiguration.Package" value="E:\workspace\WebStorm\houserent-web\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\WebStorm\houserent-web\src\assets\img" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -61,11 +120,54 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583456905393</updated>
-      <workItem from="1583456907078" duration="695000" />
+      <workItem from="1583456907078" duration="3084000" />
+      <workItem from="1583462007394" duration="475000" />
+      <workItem from="1583483555746" duration="6000" />
+      <workItem from="1583488898219" duration="7612000" />
+      <workItem from="1583558089192" duration="14653000" />
+      <workItem from="1583764800787" duration="25000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交">
+      <created>1583458804216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583458804216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#ESLint" timestamp="1583548167033">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1583548167033" />
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583550307309">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583550307309" />
+    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1583458731018">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583458731018" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1583764826463">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583764826463" />
+    <state x="304" y="81" key="SettingsEditor" timestamp="1583548132609">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="304" y="81" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583548132609" />
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2" timestamp="1583458818643">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583458818643" />
   </component>
 </project>
