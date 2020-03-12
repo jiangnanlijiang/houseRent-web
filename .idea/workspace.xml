@@ -2,61 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a37f102-52a5-4400-b219-ee5cc94b54e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/CSS/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/login-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/head_title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/main/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/main/mainBody.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/main/mainFoot.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/main/mainHead.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pubHouse/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/rent/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sys/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/clone/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/.npmignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/clone/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/clone/clone.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/clone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/clone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/clone/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/Mime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/Mime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/cli.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/lite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/README_js.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/benchmark.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/src/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/src/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/src/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/types/other.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/types/standard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/cli.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/mime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/src/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/src/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/mime/types.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url-loader/node_modules/.bin/mime.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack-dev-middleware/node_modules/.bin/mime.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,6 +53,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\WebStorm\houserent-web\src\assets\img" />
+      <recent name="E:\workspace\WebStorm\houserent-web\src\views" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -126,6 +84,8 @@
       <workItem from="1583488898219" duration="7612000" />
       <workItem from="1583558089192" duration="14653000" />
       <workItem from="1583764800787" duration="25000" />
+      <workItem from="1583793435936" duration="106000" />
+      <workItem from="1584018835464" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1583458804216</created>
@@ -134,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583458804216</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="登录页面">
+      <created>1583793469466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583793469466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +109,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="登录页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#ESLint" timestamp="1583548167033">
@@ -153,10 +121,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583550307309" />
-    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1583458731018">
+    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1583793467607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583458731018" />
+    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583793467607" />
     <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1583764826463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -165,9 +133,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="304" y="81" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583548132609" />
-    <state x="317" y="125" key="Vcs.Push.Dialog.v2" timestamp="1583458818643">
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2" timestamp="1583793473324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="317" y="125" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583458818643" />
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583793473324" />
   </component>
 </project>

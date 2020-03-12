@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     login () {
-
+      this.$router.push({ path: '/index' })
     }
   }
 }
