@@ -2,7 +2,7 @@
   <div style="padding: 0 5px 5px 5px; height: 50px">
     <div class="head">
       <span @click="$router.push({path: '/index'})" >
-        <img src="../../assets/img/head_title.png">
+        <img src="../../assets/img/title.png" class="avatar_title">
       </span>
       <span class="rent" @click="$router.push({path: '/rent'})">租房</span>
       <span class="show" @click="$router.push({path: '/pubHouse'})">发布房源</span>
@@ -29,6 +29,9 @@ export default {
   span {
     cursor: pointer;
   }
+  .avatar_title {
+    height: 100%;
+  }
   .rent, .show, .control, .login {
     font-size: 14pt;
     color: #FFFFFF;
@@ -36,6 +39,6 @@ export default {
     padding: 30px;
     position: relative;
     bottom: 15px;
-    left: 800px;
+    left: 700px;
   }
 </style>

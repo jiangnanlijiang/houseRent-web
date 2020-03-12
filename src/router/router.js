@@ -3,6 +3,16 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const [routerPush, routerReplace] = [Router.prototype.push, Router.prototype.replace]
+
+Router.prototype.push = function push (location) {
+  return routerPush.call(this, location).catch(error => error)
+}
+
+Router.prototype.replace = function replace (location) {
+  return routerReplace.call(this, location).catch(error => error)
+}
+
 export default new Router({
   routes: [
     {

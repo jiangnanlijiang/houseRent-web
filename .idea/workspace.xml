@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a37f102-52a5-4400-b219-ee5cc94b54e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/head_title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/main/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/main/mainBody.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/main/mainFoot.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/main/mainHead.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/pubHouse/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/rent/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sys/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/head_title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/title.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/title.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/main/mainFoot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/mainFoot.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/main/mainHead.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/mainHead.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pubHouse/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pubHouse/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
       <workItem from="1583558089192" duration="14653000" />
       <workItem from="1583764800787" duration="25000" />
       <workItem from="1583793435936" duration="106000" />
-      <workItem from="1584018835464" duration="733000" />
+      <workItem from="1584018835464" duration="3108000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1583458804216</created>
@@ -101,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583793469466</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="菜单栏">
+      <created>1584019671262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584019671262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,21 +113,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
     <MESSAGE value="登录页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录页面" />
+    <MESSAGE value="菜单栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="菜单栏" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#ESLint" timestamp="1583548167033">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1583548167033" />
-    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583550307309">
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584020569811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583550307309" />
-    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1583793467607">
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584020569811" />
+    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1584019669747">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583793467607" />
+    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584019669747" />
     <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1583764826463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -133,9 +137,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="304" y="81" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583548132609" />
-    <state x="317" y="125" key="Vcs.Push.Dialog.v2" timestamp="1583793473324">
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2" timestamp="1584019673131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="317" y="125" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583793473324" />
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584019673131" />
   </component>
 </project>

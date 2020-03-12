@@ -54,7 +54,7 @@ export default {
   .title {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 50%);
   }
   .login_box{
     width: 450px;
