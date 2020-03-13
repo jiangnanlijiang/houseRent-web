@@ -1,12 +1,15 @@
 <template>
   <div>
     <div>
-      <el-button type="submary">新增</el-button>
-    </div>
-    <div>
-      <el-row  v-for="(item, key) in houseData" :key="key" style="padding: 10px;" >
-        <el-col :span="20" :offset="2">
-          <el-card :body-style="{padding: '20px'}">
+      <el-card>
+        <div slot="header">
+          <span>我发布的房源</span>
+          <div>
+            <el-button type="submary">新增</el-button>
+          </div>
+        </div>
+        <ul v-for="(item, key) in houseData" :key="key">
+          <el-card>
             <el-row>
               <el-col :span="10">
                 <img src="../../assets/logo.png" class="avatar_house" />
@@ -22,9 +25,8 @@
               </el-col>
             </el-row>
           </el-card>
-        </el-col>
-      </el-row>
-
+        </ul>
+      </el-card>
     </div>
   </div>
 </template>

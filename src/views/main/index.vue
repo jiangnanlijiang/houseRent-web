@@ -1,13 +1,13 @@
 <template>
     <div class="container">
       <el-container>
-        <el-header style="padding: 0;">
+        <el-header>
           <mainHead />
         </el-header>
-        <el-main style="width: 100%; padding: 0;">
+        <el-main style="min-height: 700px;">
           <router-view />
         </el-main>
-        <el-footer class="footer">
+        <el-footer style="padding: 0;">
           <mainFoot />
         </el-footer>
       </el-container>
@@ -31,12 +31,5 @@ export default {
   .container {
     height: 100%;
     padding: 0;
-  }
-  .footer {
-    width: 100%;
-    height: 40px;
-    padding: 0;
-    position: fixed;
-    bottom: 0;
   }
 </style>

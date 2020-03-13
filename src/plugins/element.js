@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Button, Form, FormItem, Input, Container, Header, Main, Footer, Card, Row, Col, Image } from 'element-ui'
+import { Button, Form, FormItem, Input, Container, Header, Main, Footer, Card, Row, Col, Image, Radio, RadioGroup, Pagination } from 'element-ui'
 Vue.use(Button)
 Vue.use(FormItem)
 Vue.use(Form)
@@ -12,3 +12,6 @@ Vue.use(Card)
 Vue.use(Row)
 Vue.use(Col)
 Vue.use(Image)
+Vue.use(RadioGroup)
+Vue.use(Radio)
+Vue.use(Pagination)
