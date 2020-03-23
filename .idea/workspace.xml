@@ -2,11 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a37f102-52a5-4400-b219-ee5cc94b54e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/house.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/sys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/sysAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/sysConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/head_title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/basic/comment/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/basic/house/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/basic/message/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/basic/user/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/business/rentContract/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/sys/admin/editForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/sys/admin/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/sys/log/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/sys/role/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/sys/sysConfig/editForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/control/sys/sysConfig/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pubHouse/editForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/rent/houseInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugins/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/main/mainHead.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/mainHead.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/pubHouse/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pubHouse/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/rent/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/rent/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/sys/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/control/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +52,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YjXJYR4VZYkOhStNFWgrUe56yC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,8 +76,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\WebStorm\houserent-web" />
       <recent name="E:\workspace\WebStorm\houserent-web\src\assets\img" />
       <recent name="E:\workspace\WebStorm\houserent-web\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\WebStorm\houserent-web\src" />
+      <recent name="E:\workspace\WebStorm\houserent-web\src\views\control\business\rentContract" />
+      <recent name="E:\workspace\WebStorm\houserent-web\src\views\control\basic" />
+      <recent name="E:\workspace\WebStorm\houserent-web\src\views\control" />
+      <recent name="E:\workspace\WebStorm\houserent-web\src\views\main" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -79,7 +118,19 @@
       <workItem from="1583764800787" duration="25000" />
       <workItem from="1583793435936" duration="106000" />
       <workItem from="1584018835464" duration="3218000" />
-      <workItem from="1584106162038" duration="1512000" />
+      <workItem from="1584106162038" duration="1590000" />
+      <workItem from="1584188652601" duration="6876000" />
+      <workItem from="1584236354286" duration="17211000" />
+      <workItem from="1584363156152" duration="1520000" />
+      <workItem from="1584367234904" duration="3452000" />
+      <workItem from="1584448966441" duration="254000" />
+      <workItem from="1584449865456" duration="5379000" />
+      <workItem from="1584536390693" duration="4261000" />
+      <workItem from="1584706939491" duration="4032000" />
+      <workItem from="1584800699620" duration="1164000" />
+      <workItem from="1584834500250" duration="1098000" />
+      <workItem from="1584844460459" duration="5630000" />
+      <workItem from="1584965571036" duration="411000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1583458804216</created>
@@ -109,13 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584022058648</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="部分修改">
+      <created>1584110969534</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584110969534</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="第一次提交" />
     <MESSAGE value="登录页面" />
     <MESSAGE value="菜单栏" />
@@ -123,33 +182,45 @@
     <option name="LAST_COMMIT_MESSAGE" value="部分修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="74" key="#ESLint" timestamp="1583548167033">
+    <state x="361" y="74" key="#ESLint" timestamp="1584270425853">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="74" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1583548167033" />
+    <state x="361" y="74" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1584270425853" />
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584020569811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584020569811" />
-    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1584022056777">
+    <state x="357" y="10" key="CommitChangelistDialog2" timestamp="1584110968106">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584022056777" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1583764826463">
+    <state x="357" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584110968106" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1584707916089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583764826463" />
-    <state x="304" y="81" key="SettingsEditor" timestamp="1583548132609">
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584707916089" />
+    <state x="304" y="81" key="SettingsEditor" timestamp="1584449028146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="304" y="81" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583548132609" />
-    <state x="317" y="125" key="Vcs.Push.Dialog.v2" timestamp="1584022059930">
+    <state x="304" y="81" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584449028146" />
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2" timestamp="1584110971958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="317" y="125" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584022059930" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1584106728140">
+    <state x="317" y="125" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584110971958" />
+    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1584801063316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584106728140" />
+    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1584801063316" />
+    <state x="455" y="215" key="git4idea.merge.GitPullDialog" timestamp="1584536857883">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="455" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1584536857883" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1584264454966">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584264454966" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584236734334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584236734334" />
   </component>
 </project>

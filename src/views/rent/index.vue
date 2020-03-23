@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100%;height: 100%;">
-    <div style="padding: 10px;">
+    <el-card class="show">
       <el-card>
         <el-row style="padding: 10px;">
           <el-col :span="2">
@@ -38,31 +38,30 @@
         </el-row>
         <el-button type="primary">查询</el-button>
       </el-card>
-    </div>
-    <div style="width: 100%;">
-      <el-card class="show">
-        <el-row  v-for="(item, key) in houseData" :key="key" style="padding: 5px;" >
-          <el-col :span="20" :offset="2">
-            <el-card>
-              <el-row>
-                <el-col :span="10">
-                  <img src="../../assets/logo.png" class="avatar_house" />
-                </el-col>
-                <el-col :span="14">
-                  <div class="message">地址：{{item.address}}</div>
-                  <div class="message">面积：{{item.acreage}}</div>
-                  <div class="message">租金：{{item.rentPay}}/月</div>
-                  <div class="message">发布时间：{{item.createDate}}</div>
-                </el-col>
-              </el-row>
-            </el-card>
-          </el-col>
-        </el-row>
-        <div>
-          <el-pagination background layout="prev, pager, next" :page-size="5" :total="10"></el-pagination>
-        </div>
-      </el-card>
-    </div>
+      <el-row  v-for="(item, key) in houseData" :key="key" style="padding: 5px;" >
+        <el-col :span="20" :offset="2">
+          <el-card shadow="hover" style="cursor: pointer">
+            <el-row>
+              <el-col :span="10">
+                <img src="../../assets/logo.png" class="avatar_house" />
+              </el-col>
+              <el-col :span="10">
+                <div class="message">地址：{{item.address}}</div>
+                <div class="message">面积：{{item.acreage}}</div>
+                <div class="message">租金：{{item.rentPay}}/月</div>
+                <div class="message">发布时间：{{item.createDate}}</div>
+              </el-col>
+              <el-col :span="3">
+                <span style="color: #409EFF;cursor: pointer;" @click="$router.push({path: '/rent/houseInfo', query: {id: item.id}})">查看详情</span>
+              </el-col>
+            </el-row>
+          </el-card>
+        </el-col>
+      </el-row>
+      <div>
+        <el-pagination background layout="prev, pager, next" :page-size="5" :total="10"></el-pagination>
+      </div>
+    </el-card>
   </div>
 </template>
 
@@ -80,35 +79,35 @@ export default {
           createDate: '2020.3.12'
         },
         {
-          id: 1,
+          id: 2,
           address: 'xxxx',
           rentPay: 6000,
           acreage: 80,
           createDate: '2020.3.12'
         },
         {
-          id: 1,
+          id: 3,
           address: 'xxxx',
           rentPay: 6000,
           acreage: 80,
           createDate: '2020.3.12'
         },
         {
-          id: 1,
+          id: 4,
           address: 'xxxx',
           rentPay: 6000,
           acreage: 80,
           createDate: '2020.3.12'
         },
         {
-          id: 1,
+          id: 5,
           address: 'xxxx',
           rentPay: 6000,
           acreage: 80,
           createDate: '2020.3.12'
         },
         {
-          id: 1,
+          id: 6,
           address: 'xxxx',
           rentPay: 6000,
           acreage: 80,

@@ -17,11 +17,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/login'
+      redirect: '/index'
     },
     {
       path: '/login',
       component: () => import('../views/Login')
+    },
+    {
+      path: '/register',
+      component: () => import('../views/Register')
     },
     {
       path: '/index',
@@ -40,12 +44,55 @@ export default new Router({
           component: () => import('../views/rent/index')
         },
         {
+          path: '/rent/houseInfo',
+          component: () => import('../views/rent/houseInfo'),
+        },
+        {
           path: '/pubHouse',
           component: () => import('../views/pubHouse/index')
         },
         {
-          path: '/controller',
-          component: () => import('../views/sys/index')
+          path: '/control',
+          component: () => import('../views/control/index'),
+          // redirect: '/control/sysConfig',
+          children: [
+            {
+              path: '/control/sysConfig',
+              component: () => import('../views/control/sys/sysConfig/index')
+            },
+            {
+              path: '/control/role',
+              component: () => import('../views/control/sys/role/index')
+            },
+            {
+              path: '/control/log',
+              component: () => import('../views/control/sys/log/index')
+            },
+            {
+              path: '/control/admin',
+              component: () => import('../views/control/sys/admin/index')
+            },
+            {
+              path: '/control/user',
+              component: () => import('../views/control/basic/user/index')
+            },
+            {
+              path: '/control/house',
+              component: () => import('../views/control/basic/house/index')
+            },
+            {
+              path: '/control/message',
+              component: () => import('../views/control/basic/message/index')
+            },
+            {
+              path: '/control/comment',
+              component: () => import('../views/control/basic/comment/index')
+            },
+            {
+              path: '/control/contractCenter',
+              component: () => import('../views/control/business/rentContract/index')
+            }
+          ]
         }
       ]
     }

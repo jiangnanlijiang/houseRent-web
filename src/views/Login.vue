@@ -8,19 +8,19 @@
         <img src="../assets/img/logo.jpg" />
       </div>
       <div class="login_form">
-        <el-form :model="loginForm">
-          <el-form-item prop="name">
-            <el-input v-model="loginForm.name" prefix-icon="el-icon-user" placeholder="账号" class="input"></el-input>
+        <el-form :model="loginForm" :rules="loginFormRules" ref="loginForm">
+          <el-form-item prop="account">
+            <el-input v-model="loginForm.account" prefix-icon="el-icon-user" placeholder="账号/手机号" class="input"></el-input>
           </el-form-item>
           <el-form-item prop="password">
-            <el-input v-model="loginForm.password" prefix-icon="el-icon-lock" placeholder="密码" class="input"></el-input>
+            <el-input v-model="loginForm.password" type="password" show-password :maxlength="16" prefix-icon="el-icon-lock" placeholder="密码" class="input"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" style="width: 100%" @click="login">登录</el-button>
+            <el-button type="primary" style="width: 100%" @click="submit">登录</el-button>
           </el-form-item>
         </el-form>
         <div style="display: flex;justify-content: flex-end;">
-          <label style="cursor: pointer; color:#ff0000;">还没有账号?点击注册</label>
+          <label style="cursor: pointer; color:#ff0000;" @click="$router.replace({path: '/register'})">还没有账号?点击注册</label>
         </div>
       </div>
     </div>
@@ -28,19 +28,59 @@
 </template>
 
 <script>
+
+  import { login } from '@/api/sys.js'
 export default {
   name: 'Login',
   data () {
     return {
       loginForm: {
-        name: '',
+        account: '',
         password: ''
+      },
+      loginFormRules: {
+        account: [
+          {required: true, message: '请输入账号', trigger: 'blur'}
+        ],
+        password: [
+          {required: true, message: '请输入密码', trigger: 'blur'}
+        ]
       }
     }
   },
   methods: {
-    login () {
-      this.$router.push({ path: '/index' })
+    submit () {
+      this.$refs.loginForm.validate((valid) => {
+        if(valid){
+          login(this.loginForm).then(res => {
+            const response = res;
+            if(response.code == '0000'){
+              this.$notify({
+                message: response.msg,
+                type: 'success',
+                duration: 2000
+              });
+              sessionStorage.setItem("token", response.data.token)
+              setTimeout(() => {
+                this.$router.push({path: '/index'})
+              }, 3*1000)
+              this.$router.push({path: '/index'})
+            }
+            else {
+              this.$notify({
+                message: response.msg,
+                type: 'error',
+                duration: 2000
+              })
+            }
+          }).catch(err => {
+            console.log(err)
+          })
+        }
+        else{
+          return false;
+        }
+      })
     }
   }
 }

@@ -6,15 +6,24 @@
       </span>
       <span class="rent" @click="$router.push({path: '/rent'})">租房</span>
       <span class="show" @click="$router.push({path: '/pubHouse'})">发布房源</span>
-      <span class="control" @click="$router.push({path: '/controller'})">管理员中心</span>
-      <span class="login" @click="$router.push({path: '/login'})">登录/注册</span>
+      <span class="control" @click="$router.push({path: '/control'})">管理员中心</span>
+      <span v-if="this.token==null" class="login" @click="$router.push({path: '/login'})">登录/注册</span>
+      <span v-else class="login">欢迎您</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'mainHead'
+  name: 'mainHead',
+  created () {
+    this.token = sessionStorage.getItem('token')
+  },
+  data () {
+    return {
+      token: null
+    }
+  }
 }
 </script>
 
