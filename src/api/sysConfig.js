@@ -1,16 +1,16 @@
 import request from '../utils/request'
 
-export function findAll () {
+export function findAll (data) {
   return request({
-    url: '/config/findAll',
-    method: 'get'
+    url: 'sysConfig/findAll',
+    method: 'post',
+    data
   })
 }
 
 export function saveInfo (data) {
-  debugger
   return request({
-    url: '/config/saveInfo',
+    url: '/sysConfig/saveInfo',
     method: 'post',
     data
   })

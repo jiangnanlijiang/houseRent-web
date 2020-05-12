@@ -68,11 +68,11 @@
         </el-col>
       </el-row>
       <div style="margin: 20px 0 20px 0;background-color: #D9D9D9; "><span style="color: #409EFF;font-size: 15pt;">留言板</span></div>
-        <!--<div class="message_box">
-          <ul class="infinite-list" v-infinite-scroll="load">
-            <li class="infinite-list-item" v-for="i in count">{{i}}</li>
-          </ul>
-        </div>-->
+      <!--<div class="message_box">
+        <ul class="infinite-list" v-infinite-scroll="load">
+          <li class="infinite-list-item" v-for="i in count">{{i}}</li>
+        </ul>
+      </div>-->
     </el-card>
     <talk-box></talk-box>
   </div>

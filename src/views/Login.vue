@@ -10,10 +10,10 @@
       <div class="login_form">
         <el-form :model="loginForm" :rules="loginFormRules" ref="loginForm">
           <el-form-item prop="account">
-            <el-input v-model="loginForm.account" prefix-icon="el-icon-user" placeholder="账号/手机号" class="input"></el-input>
+            <el-input v-model="loginForm.account" prefix-icon="el-icon-user" placeholder="账号/手机号" class="input" @keyup.enter.native="submit"></el-input>
           </el-form-item>
           <el-form-item prop="password">
-            <el-input v-model="loginForm.password" type="password" show-password :maxlength="16" prefix-icon="el-icon-lock" placeholder="密码" class="input"></el-input>
+            <el-input v-model="loginForm.password" type="password" show-password :maxlength="16" prefix-icon="el-icon-lock" placeholder="密码" class="input" @keyup.enter.native="submit"></el-input>
           </el-form-item>
           <el-form-item>
             <el-button type="primary" style="width: 100%" @click="submit">登录</el-button>
@@ -28,15 +28,14 @@
 </template>
 
 <script>
-
   import { login } from '@/api/sys.js'
 export default {
   name: 'Login',
   data () {
     return {
       loginForm: {
-        account: '',
-        password: ''
+        account: null,
+        password: null
       },
       loginFormRules: {
         account: [
@@ -54,27 +53,23 @@ export default {
         if(valid){
           login(this.loginForm).then(res => {
             const response = res;
-            if(response.code == '0000'){
-              this.$notify({
-                message: response.msg,
-                type: 'success',
-                duration: 2000
-              });
-              sessionStorage.setItem("token", response.data.token)
-              setTimeout(() => {
-                this.$router.push({path: '/index'})
-              }, 3*1000)
+            this.$notify({
+              message: response.msg,
+              type: 'success',
+              duration: 2000
+            });
+            sessionStorage.setItem("token", response.data.token)
+            setTimeout(() => {
               this.$router.push({path: '/index'})
-            }
-            else {
-              this.$notify({
-                message: response.msg,
-                type: 'error',
-                duration: 2000
-              })
-            }
+            }, 1000);
+            this.$refs.loginForm.resetFields();
           }).catch(err => {
-            console.log(err)
+            this.$notify({
+              title: err.response.data.message,
+              type: 'error',
+              duration: 2000
+            });
+            this.loginForm.password = null;
           })
         }
         else{

@@ -3,12 +3,13 @@ import App from './App.vue'
 import router from './router/router'
 import store from './store'
 import './plugins/element.js'
-import request from './utils/request'
 
 // 个人配置
 import './assets/CSS/style.css'
 
-Vue.prototype.request = request
+//websocket
+import webSocketServer from './utils/webSocket'
+Vue.prototype.$webSocketServer = webSocketServer;
 
 Vue.config.productionTip = false
 

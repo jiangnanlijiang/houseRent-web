@@ -6,7 +6,13 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  created () {
+    let loading = document.getElementById('sampleContainer');
+    if(loading!=null){
+      document.body.removeChild(loading);
+    }
+  }
 }
 </script>
 

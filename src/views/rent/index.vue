@@ -7,10 +7,11 @@
             <span>出租方式</span>
           </el-col>
           <el-col :span="10">
-            <el-radio-group v-model="searchForm.type">
+            <el-radio-group v-model="criteria.method">
               <el-radio :label="0">不限</el-radio>
               <el-radio :label="1">整租</el-radio>
               <el-radio :label="2">合租</el-radio>
+              <el-radio :label="3">转租</el-radio>
             </el-radio-group>
           </el-col>
         </el-row>
@@ -19,12 +20,12 @@
             <span>户型</span>
           </el-col>
           <el-col :span="10">
-            <el-radio-group v-model="searchForm.layout">
+            <el-radio-group v-model="criteria.bedRoom">
               <el-radio :label="0">不限</el-radio>
               <el-radio :label="1">一居室</el-radio>
               <el-radio :label="2">二居室</el-radio>
               <el-radio :label="3">三居室</el-radio>
-              <el-radio :label="3">三居室+</el-radio>
+              <el-radio :label="4">三居室+</el-radio>
             </el-radio-group>
           </el-col>
         </el-row>
@@ -33,93 +34,85 @@
             <span>房租金额</span>
           </el-col>
           <el-col :span="10">
-            <el-input style="width: 100px;" v-model="searchForm.min_pay" size="mini" /> 元/月 - <el-input style="width: 100px;" v-model="searchForm.max_pay" size="mini" /> 元/月
+            <el-input style="width: 100px;" v-model="criteria.minPay" size="mini" /> 元/月 - <el-input style="width: 100px;" v-model="criteria.maxPay" size="mini" /> 元/月
           </el-col>
         </el-row>
-        <el-button type="primary">查询</el-button>
+        <el-button type="primary" @click="initPage">查询</el-button>
       </el-card>
-      <el-row  v-for="(item, key) in houseData" :key="key" style="padding: 5px;" >
-        <el-col :span="20" :offset="2">
-          <el-card shadow="hover" style="cursor: pointer">
+        <div v-if="total != null && total>0">
             <el-row>
-              <el-col :span="10">
-                <img src="../../assets/logo.png" class="avatar_house" />
-              </el-col>
-              <el-col :span="10">
-                <div class="message">地址：{{item.address}}</div>
-                <div class="message">面积：{{item.acreage}}</div>
-                <div class="message">租金：{{item.rentPay}}/月</div>
-                <div class="message">发布时间：{{item.createDate}}</div>
-              </el-col>
-              <el-col :span="3">
-                <span style="color: #409EFF;cursor: pointer;" @click="$router.push({path: '/rent/houseInfo', query: {id: item.id}})">查看详情</span>
-              </el-col>
+              <template v-for="item in houseData">
+                <el-col style="padding: 20px" :span="8">
+                  <el-card>
+                    <div  style="cursor: pointer;" @click="$router.push({path: '/rent/houseInfo', query: {id: item.id}})">
+                      <el-image :src="item.image"></el-image>
+                      <div><span>地址：{{item.provinceName + item.cityName + item.countyName + item.address}}</span></div>
+                      <div><span>面积：{{item.acreage}} m²</span></div>
+                      <div><span>租金：{{item.rentMoney}} 元</span></div>
+                    </div>
+                  </el-card>
+                </el-col>
+              </template>
             </el-row>
-          </el-card>
-        </el-col>
-      </el-row>
-      <div>
-        <el-pagination background layout="prev, pager, next" :page-size="5" :total="10"></el-pagination>
-      </div>
+          <el-pagination
+            background
+            layout="prev, pager, next"
+            :page-size.sync="pageSize"
+            :current-page.sync="pageNum"
+            :total="total"
+            :pager-count="5"
+            hide-on-single-page @current-change="initPage"></el-pagination>
+        </div>
+        <div v-else><span style="padding: 20px;text-align: center;display: block;">没有找到您想要的房源信息</span></div>
     </el-card>
   </div>
 </template>
 
 <script>
-export default {
+
+  import { findAll } from '../../api/house'
+
+  export default {
   name: 'index',
   data () {
     return {
-      houseData: [
-        {
-          id: 1,
-          address: 'xxxx',
-          rentPay: 6000,
-          acreage: 80,
-          createDate: '2020.3.12'
-        },
-        {
-          id: 2,
-          address: 'xxxx',
-          rentPay: 6000,
-          acreage: 80,
-          createDate: '2020.3.12'
-        },
-        {
-          id: 3,
-          address: 'xxxx',
-          rentPay: 6000,
-          acreage: 80,
-          createDate: '2020.3.12'
-        },
-        {
-          id: 4,
-          address: 'xxxx',
-          rentPay: 6000,
-          acreage: 80,
-          createDate: '2020.3.12'
-        },
-        {
-          id: 5,
-          address: 'xxxx',
-          rentPay: 6000,
-          acreage: 80,
-          createDate: '2020.3.12'
-        },
-        {
-          id: 6,
-          address: 'xxxx',
-          rentPay: 6000,
-          acreage: 80,
-          createDate: '2020.3.12'
-        }
-      ],
-      searchForm: {
-        type: 0,
-        layout: 0,
-        max_pay: null,
-        min_pay: null
+      pageSize: 9,
+      pageNum: 1,
+      total: null,
+      houseData: [],
+      criteria: {
+        method: 0,
+        bedRoom: 0
+      },
+    }
+  },
+    created () {
+      this.initPage();
+    },
+    methods: {
+    initPage () {
+      const criteria = {
+        isDelete: 0,
+        status: 1
+      };
+      if(this.criteria.method != null && this.criteria.method != ''){
+        criteria.method = this.criteria.method;
       }
+      if(this.criteria.bedRoom != null && this.criteria.bedRoom != ''){
+        criteria.bedRoom = this.criteria.bedRoom;
+      }
+      if(this.criteria.minPay !=null && this.criteria.minPay != ''){
+        criteria.minPay = this.criteria.minPay;
+      }
+      if(this.criteria.maxPay != null && this.criteria.maxPay != ''){
+        criteria.maxPay = this.criteria.maxPay;
+      }
+      criteria.pageSize = this.pageSize;
+      criteria.pageNum = this.pageNum;
+      findAll(criteria).then(res => {
+        this.houseData = res.data.list;
+        this.total = res.data.total;
+      })
     }
   }
 }

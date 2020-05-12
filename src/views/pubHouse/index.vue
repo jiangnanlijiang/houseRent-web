@@ -15,23 +15,31 @@
         </div>
         <div v-if="this.houseData!=null&&this.houseData.length>0">
           <ul v-for="(item, key) in houseData" :key="key">
-          <el-card>
+          <el-card style="width: 1000px;cursor: pointer;">
             <el-row>
-              <el-col :span="10">
-                <img src="../../assets/logo.png" class="avatar_house" />
+              <el-col :span="8">
+                <el-image :src="item.image" ></el-image>
               </el-col>
-              <el-col :span="10">
-                <div class="message">地址：{{item.address}}</div>
+              <el-col :offset="2" :span="10">
+                <div class="message">地址：{{item.provinceName+item.cityName+item.countyName+item.address}}</div>
                 <div class="message">面积：{{item.acreage}}</div>
-                <div class="message">租金：{{item.rentPay}}/月</div>
-                <div class="message">发布时间：{{item.createDate}}</div>
+                <div class="message">租金：{{item.rentMoney}}/月</div>
+                <div class="message">发布时间：{{item.createTime}}</div>
               </el-col>
               <el-col :span="4">
-                <span style="position: absolute; bottom: 10px; color: #ff0000;">{{item.verify_status==0?'正在审核':(item.verify_status==1?'审核通过':'审核驳回')}}</span>
+                <span style="position: absolute; bottom: 10px; color: #ff0000;">{{item.status==0?'正在审核':(item.status==1?'审核通过':(item.status==2?'审核驳回':(item.saddlebrown==3?'已出租':'出租完成')))}}</span>
               </el-col>
             </el-row>
           </el-card>
         </ul>
+          <el-pagination
+            background
+            layout="prev, pager, next"
+            :page-size.sync="pageSize"
+            :current-page.sync="pageNum"
+            :total="total"
+            :pager-count="5"
+            hide-on-single-page @current-change="initPage"></el-pagination>
         </div>
         <div v-else><span style="padding: 20px;text-align: center;display: block;">您还没有发布房源信息</span></div>
       </el-card>
@@ -41,8 +49,9 @@
 
 <script>
   import editForm from './editForm'
-  import { findAll, test } from '@/api/house'
+  import { findAll } from '@/api/house'
   import { readRegion } from '@/utils/load'
+  import moment from 'moment'
 
   export default {
   name: 'index',
@@ -50,22 +59,30 @@
     editForm
   },
   created () {
-    this.option.t = 'pub';
-    findAll(this.option).then(res => {
-      this.houseData = res.data;
-    })
+    this.initPage();
     readRegion();
   },
   data () {
     return {
-      option: {},
+      pageSize: 10,
+      pageNum: 1,
+      total: null,
+      criteria: {},
       houseData: []
     }
   },
   methods: {
     initPage() {
-      findAll(this.option).then(res => {
-        this.houseData = res.data;
+      const criteria = {};
+      criteria.pageSize = this.pageSize;
+      criteria.pageNum = this.pageNum;
+      criteria.t = 'pub';
+      findAll(criteria).then(res => {
+        this.houseData = res.data.list;
+        this.houseData.forEach(res => {
+          res.createTime = moment(res.createTime).format('YYYY年MM月DD日 hh:mm:ss');
+        })
+        this.total = res.data.total;
       })
     },
     addInfo(){

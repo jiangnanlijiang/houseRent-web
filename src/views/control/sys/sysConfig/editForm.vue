@@ -49,20 +49,14 @@ export default {
     submit () {
       this.dialog = false
       const infos = this.dataForm
-      debugger
       saveInfo(infos).then(res => {
         this.$notify({
           title: '成功',
           message: res.data.msg,
           type: 'success'
         })
+        this.$parent.initPage();
         this.close()
-      }).catch(res => {
-        this.$notify({
-          title: '失败',
-          message: '新增失败',
-          type: 'error'
-        })
       })
     }
   }

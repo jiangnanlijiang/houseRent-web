@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Notification } from 'element-ui'
+
 
 const service = axios.create({
   baseURL: 'api',
@@ -9,6 +9,8 @@ const service = axios.create({
 // 请求拦截（配置发送请求的信息）
 service.interceptors.request.use(function (config) {
   // 处理请求之前的配置
+  config.headers['Content-Type'] = 'application/json';
+  config.headers['token'] = sessionStorage.getItem("token");
   return config
 }, function (error) {
   // 请求失败的处理
@@ -23,29 +25,6 @@ service.interceptors.response.use(
     return responseData;
   },
   error => {
-    let code = 0
-    try {
-      code = error.response.data.status
-    } catch (e) {
-      if (error.toString().indexOf('Error: timeout') !== -1) {
-        Notification.error({
-          title: '网络请求超时',
-          duration: 2500
-        })
-        return Promise.reject(error)
-      }
-      if (error.toString().indexOf('Error: Network Error') !== -1) {
-        Notification.error({
-          title: '网络请求错误',
-          duration: 2500
-        })
-        return Promise.reject(error)
-      }
-    }
-    Notification.error({
-      title: error.response.data.message,
-      duration: 2*1000
-    })
   // 处理响应失败
   return Promise.reject(error)
 })

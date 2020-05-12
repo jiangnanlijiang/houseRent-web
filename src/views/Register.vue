@@ -76,25 +76,21 @@
         this.$refs.registerForm.validate((valid) => {
           if(valid){
             register({mobile: this.registerForm.account, password: this.registerForm.password}).then(res => {
-              const response = res.data;
-              if(response.code == '0000'){
                 this.$notify({
-                  message: response.msg,
+                  message: res.msg,
                   type: 'success',
                   duration: 2000
                 });
                 setTimeout(() => {
                   this.$router.replace({path: '/login'})
-                }, 3*1000)
-              }
-              else {
-                this.$notify({
-                  message: response.msg,
-                  type: 'error',
-                  duration: 2000
-                })
-              }
-            })
+                }, 2*1000)
+            }).catch(err => {
+              this.$notify({
+                title: err.response.data.message,
+                type: 'error',
+                duration: 2000
+              });
+            });
           }
           else{
             return false;

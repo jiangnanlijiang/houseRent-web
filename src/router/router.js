@@ -13,7 +13,7 @@ Router.prototype.replace = function replace (location) {
   return routerReplace.call(this, location).catch(error => error)
 }
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -52,10 +52,18 @@ export default new Router({
           component: () => import('../views/pubHouse/index')
         },
         {
+          path: '/pubHouse/houseInfo',
+          component: () => import('../views/pubHouse/houseInfo')
+        },
+        {
           path: '/control',
           component: () => import('../views/control/index'),
-          // redirect: '/control/sysConfig',
+          redirect: '/control/index',
           children: [
+            {
+              path: '/control/index',
+              component: () => import('../views/control/home')
+            },
             {
               path: '/control/sysConfig',
               component: () => import('../views/control/sys/sysConfig/index')
@@ -95,6 +103,26 @@ export default new Router({
           ]
         }
       ]
+    },
+    {
+      path: '/user',
+      component: () => import('../views/user/index')
+    },
+    {
+      path: '/message',
+      component: () => import('../views/message/index')
     }
   ]
+})
+
+export default router;
+
+router.beforeEach((to, from, next) => {
+    const path = to.path;
+    if(path!='/login' && path!='/register' && sessionStorage.getItem("token") == null){
+      setTimeout(function () {
+        next({path: '/login'});
+      }, 1000)
+    }
+    else next();
 })

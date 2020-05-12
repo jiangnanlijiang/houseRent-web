@@ -15,3 +15,19 @@ export function saveInfo (data) {
     data
   })
 }
+
+export function updateStatus (data) {
+  return request({
+    url: '/house/updateStatus',
+    method: 'post',
+    data
+  })
+}
+
+export function findInfo (data) {
+  return request({
+    url: '/house/findInfo',
+    method: 'post',
+    data
+  })
+}
